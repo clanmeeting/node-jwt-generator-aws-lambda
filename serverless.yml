@@ -1,0 +1,25 @@
+service: clan-meeting-video-api
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+  memorySize: 2048
+  timeout: 15
+  region: ap-south-1
+  stage: prod
+
+functions:
+  getJwt:
+    handler: handler.getJwt
+    events:
+      - http: 
+          path: /
+          method: ANY
+          cors: true
+      - http: 
+          path: /{proxy+}
+          method: ANY
+          cors: true
+    environment:
+      PORT: 5000

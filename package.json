@@ -1,0 +1,29 @@
+{
+  "name": "node-jwt-generator-aws-lambda",
+  "version": "1.0.0",
+  "description": "Generate JWTs for Clan Meeting Video Conferencing API and deploy to AWS as serverless function",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "deploy": "serverless deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clanmeeting/node-jwt-generator-aws-lambda.git"
+  },
+  "author": "Clan Meeting",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clanmeeting/node-jwt-generator-aws-lambda/issues"
+  },
+  "homepage": "https://github.com/clanmeeting/node-jwt-generator-aws-lambda#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "serverless": "^3.23.0",
+    "serverless-http": "^3.1.0"
+  }
+}

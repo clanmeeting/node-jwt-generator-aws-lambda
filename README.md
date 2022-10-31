@@ -1,2 +1,2 @@
-# node-jwt-generator-aws-lambda
-Host your own JWT generator with AWS Lambda + API Gateway on the most popular cloud platform
+# JWT Generator Serverless Deployment to AWS
+Generate a JWT token for Clan Meeting Video Conferencing API and replace the static test token with short-lived tokens. Deploy the JWT generator on AWS cloud.
