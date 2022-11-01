@@ -9,4 +9,5 @@ jspm_packages
 *.pem
 *.ppk
 *.env
-private-keys
+private-keys/*.pem
+private-keys/*.ppk
