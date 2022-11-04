@@ -23,7 +23,7 @@ app.get(`${path}/consumers/:consumerId/jwts`, (req, res) => {
       iss: 'production',
       room: roomName ?? '*',
       // valid for 5 minutes
-      exp: Math.floor(Date.now() / 1000) + (60 * 5),
+      exp: Math.floor(Date.now() / 1000) + (60 * 120),
       nbf: Math.floor(Date.now() / 1000),
       context: {},
     }
